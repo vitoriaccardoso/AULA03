@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    gap: 16px;
+}
+.item{
+    width: 80%;
+    height: 50px;
+    background-color: plum;
+    color: rgb(158, 24, 158);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+button{
+    padding: 0 8px;
+}
+
+.resultado{
+    width: 100px;
+    height: 20px;
+    background-color: white;
+    color: violet;
+}

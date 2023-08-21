@@ -11,6 +11,7 @@
     align-items: center;
     padding: 32px;
     gap: 16px;
+    background-color: rgb(231, 182, 255);
 }
 .item{
     width: 80%;
@@ -30,5 +31,5 @@ button{
     width: 100px;
     height: 20px;
     background-color: white;
-    color: violet;
+    color: purple;
 }

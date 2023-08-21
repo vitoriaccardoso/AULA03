@@ -1,6 +1,7 @@
 'use strict'
 const botaoSomar = document.getElementById('somar')
 const botaoIdentificar = document.getElementById('identificar')
+const botaoMedia = document.getElementById("media")
 
 
 function somar (){ 
@@ -25,37 +26,38 @@ function identificar(){
     }
 }
 
+
 function media(){
     const n1 = Number(document.getElementById('n1').value)
     const n2 = Number(document.getElementById('n2').value)
     const n3 = Number(document.getElementById('n3').value)
     const n4 = Number(document.getElementById('n4').value)
-    const resultado = document.getElementById('resultado-media')
-
-    const total = (n1 + n2 + n3 + n4) / 4
-    resultado.textContent = total
 
 
-    if(total >= 7) {
+    const ne = Number(document.getElementById('ne').value)
+    const resultado = document.getElementById('resultadoMedia')
 
-        resultado.textContent = 'APROVADO'
-    }else if(total < 7){
-        resultado.textContent = 'NEGATIVO'
+    const media = (n1 + n2 + n3 + n4) / 4
+
+
+    if(media >= 7) {
+        resultado.textContent = 'APROVADO - Média: ' + media;
+    }else{
+        const ne = Number (prompt('Digite a nota de exame'))
+        const md2 = (media + ne) / 2;
+
+    if (md2 >= 5) {
+        resultado.textContent = 'APROVADO EM EXAME - Média após exame: ' + md2;
+    } else {
+        
+        resultado.textContent = 'REPROVADO após exame - Média após exame: ' + md2;
     }
     }
-
-    function impar_ou_par(){
-        const num1 = Number(document.getElementById('num1').value)
-        const num2 = Number(document.getElementById('num2').value)
-
-
-
-    }
-
+}
 
 
 
 
 botaoSomar.addEventListener('click', somar)
 botaoIdentificar.addEventListener('click', identificar)
-botaoMedia.addEventListener('click', impar_ou_par)
+botaoMedia.addEventListener('click', media)

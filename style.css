@@ -14,8 +14,8 @@
     background-color: rgb(231, 182, 255);
 }
 .item{
-    width: 80%;
-    height: 50px;
+    width: 100%;
+    height: 90px;
     background-color: plum;
     color: rgb(158, 24, 158);
     display: flex;
